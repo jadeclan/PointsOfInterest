@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/scrollView1">
+    <LinearLayout
+        p1:orientation="vertical"
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="match_parent"
+        p1:id="@+id/linearLayout1"
+        p1:padding="5dp">
+        <TextView
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:text="Name"
+            p1:id="@+id/textView10" />
+        <EditText
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/nameEditText"
+            p1:inputType="textCapWords" />
+        <TextView
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:text="Description"
+            p1:id="@+id/textView11" />
+        <EditText
+            p1:inputType="textMultiLine|textCapSentences"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/descEditText" />
+        <TextView
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:text="Address"
+            p1:id="@+id/textView12" />
+        <EditText
+            p1:inputType="textMultiLine"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/addrEditText" />
+        <TableLayout
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="match_parent"
+            p1:layout_height="wrap_content"
+            p1:stretchColumns="*"
+            p1:id="@+id/tableLayout1">
+            <TableRow
+                p1:id="@+id/tableRow1">
+                <TextView
+                    p1:text="Latitude"
+                    p1:layout_column="0"
+                    p1:id="@+id/textView21" />
+                <TextView
+                    p1:text="Longitude"
+                    p1:layout_column="1"
+                    p1:id="@+id/textView22" />
+            </TableRow>
+            <TableRow
+                p1:id="@+id/tableRow2">
+                <EditText
+                    p1:inputType="numberDecimal|numberSigned"
+                    p1:layout_column="0"
+                    p1:id="@+id/latEditText" />
+                <EditText
+                    p1:inputType="numberDecimal|numberSigned"
+                    p1:layout_column="1"
+                    p1:id="@+id/longEditText" />
+            </TableRow>
+        </TableLayout>
+      <ImageView p1:src="@android:drawable/ic_menu_gallery"
+                 p1:layout_width="wrap_content"
+                 p1:layout_height="wrap_content"
+                 p1:padding="10dp"
+                 p1:id="@+id/poiImageView"
+                 p1:layout_gravity="center_horizontal"
+                 p1:scaleType="fitCenter"/>
+        <LinearLayout
+            p1:orientation="horizontal"
+            p1:minWidth="25px"
+            p1:minHeight="25px"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/linearLayout2"
+            p1:paddingBottom="10dp"
+            p1:paddingTop="10dp"
+            p1:layout_gravity="center_horizontal">
+            <ImageButton
+                p1:src="@drawable/ic_locate"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content"
+                p1:id="@+id/locationImageButton" />
+            <ImageButton
+                p1:src="@drawable/ic_map"
+                p1:id="@+id/mapImageButton"
+                p1:layout_width="match_parent"
+                p1:layout_height="wrap_content" />
+          <ImageButton
+            p1:src="@drawable/ic_new_picture"
+            p1:layout_width="wrap_content"
+            p1:layout_height="wrap_content"
+            p1:id="@+id/photoImageButton" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
